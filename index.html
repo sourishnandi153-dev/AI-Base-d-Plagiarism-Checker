@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plagiarism Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔍 QUANTUM PROOF </h1>
+        <div class="wrapper">
+
+            <!-- Input Section -->
+            <div class="input-section">
+                <h2>Input: Plagiarism Checker</h2>
+                <p>Paste your text below to check for plagiarism.</p>
+                <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+                <button onclick="checkPlagiarism()">Check Plagiarism</button>
+            </div>
+
+            <!-- Output Section -->
+            <div class="output-section">
+                <h2>Output: Plagiarism Report</h2>
+
+                <div class="result-card">
+                    <div class="circle" id="similarityCircle">0%</div>
+                    <h3 id="resultText">No Similarity Detected</h3>
+                </div>
+
+                <div class="report">
+                    <p>✅ <strong id="uniquePercent">0%</strong> Unique Content</p>
+                    <p>❌ <strong id="plagiarizedPercent">0%</strong> Plagiarized Content</p>
+                    <p>📚 <strong id="sourcesCount">0</strong> Sources Found</p>
+                </div>
+
+                <div class="highlight">
+                    <h3>Highlighted Text:</h3>
+                    <p id="highlightedText">Your results will appear here.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
